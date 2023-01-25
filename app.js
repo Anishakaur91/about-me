@@ -73,7 +73,7 @@ let attempts = 3;
 while (question5 != 2 && attempts > 0) {
   question5 = prompt(" Try again ");
   attempts--;
-  console.log(attempts + "more attempts");
-  prompt("well done");
+  // console.log(attempts + "more attempts");
+  alert("well done");
   points++;
 }
