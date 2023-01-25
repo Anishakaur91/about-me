@@ -67,13 +67,22 @@ if (question4 == true) {
   console.log("incorrect!");
 }
 
-question5 = prompt("What is my favourite number? guess a number between 1-5");
-let question5 = 2;
+let question5 = prompt(
+  "What is my favourite number? guess a number between 1-5"
+);
 let attempts = 3;
 while (question5 != 2 && attempts > 0) {
-  question5 = prompt(" Try again ");
+  if (question5 > 2) {
+    alert("your guess is high");
+  }
+  if (question5 < 2) {
+    alert("your guess is low");
+  }
+  alert = " Try again " + attempts + "more attempts";
   attempts--;
   // console.log(attempts + "more attempts");
-  alert("well done");
+}
+if (question5 == 2) {
   points++;
+  alert("well done");
 }
