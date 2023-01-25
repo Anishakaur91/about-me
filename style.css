@@ -1,0 +1,14 @@
+h1 {
+  font-family: sans-serif;
+  color: blueviolet;
+}
+p {
+  color: rgb(255, 127, 138);
+}
+p.experience {
+  background-color: antiquewhite;
+  font-family: helvetica;
+}
+#education {
+  color: aquamarine;
+}
