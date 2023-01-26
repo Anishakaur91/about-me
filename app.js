@@ -73,13 +73,16 @@ let question5 = prompt(
 let attempts = 3;
 while (question5 != 2 && attempts > 0) {
   if (question5 > 2) {
-    alert("your guess is high");
+    alert("your guess is high" + "Try again " + attempts + "more attempts");
+    attempts--;
   }
   if (question5 < 2) {
-    alert("your guess is low");
+    alert("your guess is low" + "Try again " + attempts + "more attempts");
+    attempts--;
   }
-  alert = " Try again " + attempts + "more attempts";
-  attempts--;
+
+  // alert("Try again " + attempts + "more attempts");
+  // attempts--;
   // console.log(attempts + "more attempts");
 }
 if (question5 == 2) {
