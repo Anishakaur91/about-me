@@ -73,11 +73,15 @@ let question5 = prompt(
 let attempts = 3;
 while (question5 != 2 && attempts > 0) {
   if (question5 > 2) {
-    alert("your guess is high" + "Try again " + attempts + "more attempts");
+    question5 = prompt(
+      "your guess is high" + "Try again " + attempts + "more attempts"
+    );
     attempts--;
   }
   if (question5 < 2) {
-    alert("your guess is low" + "Try again " + attempts + "more attempts");
+    question5 = prompt(
+      "your guess is low" + "Try again " + attempts + "more attempts"
+    );
     attempts--;
   }
 
@@ -86,6 +90,6 @@ while (question5 != 2 && attempts > 0) {
   // console.log(attempts + "more attempts");
 }
 if (question5 == 2) {
-  points++;
+  userPoints++;
   alert("well done");
 }
