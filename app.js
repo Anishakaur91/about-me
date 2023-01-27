@@ -17,22 +17,26 @@ if (question == true) {
 }
 
 //question one
-let football = prompt("What football team do i support?").toLowerCase();
+let favouriteplace = prompt(
+  "Which is my favourite plave to visit?"
+).toLowerCase();
 if (
-  football == "tottenham hotspurs" ||
-  football == "spurs" ||
-  football == "tottenham"
+  favouriteplace == "london" ||
+  favouriteplace == "switzerland" ||
+  favouriteplace == "japan"
 ) {
   alert("WELL DONE, you got one right..so far! Keep going!");
-} else if (football == "arsenal" || football == "gooners") {
-  alert("I guess somebody has too!");
+} else if (favouriteplace == "china" || favouriteplace == "pakistan") {
+  alert("I guess somebody does'nt know me much!");
 } else {
-  alert("bum boy");
+  alert("better luck next time");
 }
 
 // question two
-let foodQuestion = prompt("What is my favourite go to cuisine?").toLowerCase();
-
+let foodQuestion = prompt("What is my favourite go to cuisine?")?.toLowerCase();
+while (!foodQuestion) {
+  foodQuestion = prompt("You need to answer this question")?.toLowerCase();
+}
 let foodsILike = ["thai", "indian", "italian", "mediterranian"];
 
 for (let i = 0; i < foodsILike.length; i++) {
@@ -47,12 +51,12 @@ for (let i = 0; i < foodsILike.length; i++) {
   }
 }
 
-alert("Have you kept track of how many you go right?🤔");
+alert("Have you kept track of how many you go right so far?🤔");
 
 // question three
-let sports = confirm("Did i used to play rugby for Liverpool?");
+let shopping = confirm("Do I like to do online shopping ?");
 
-if (sports == true) {
+if (shopping == true) {
   alert("Your smashing this! Only 2 questions to go.");
   userPoints++;
 } else {
@@ -63,8 +67,12 @@ if (sports == true) {
 let question4 = confirm("Is my favourite cuisine chinese?");
 if (question4 == true) {
   console.log("correct!");
-} else {
+  alert("Your smashing this! Only 1 more question to go.");
+  userPoints++;
+} else question4 == false;
+{
   console.log("incorrect!");
+  alert("better luck next time");
 }
 
 let question5 = prompt(
@@ -74,20 +82,16 @@ let attempts = 3;
 while (question5 != 2 && attempts > 0) {
   if (question5 > 2) {
     question5 = prompt(
-      "your guess is high" + "Try again " + attempts + "more attempts"
+      "your guess is high" + " Try again " + attempts + "more attempts"
     );
     attempts--;
   }
   if (question5 < 2) {
     question5 = prompt(
-      "your guess is low" + "Try again " + attempts + "more attempts"
+      "your guess is low" + " Try again " + attempts + "more attempts"
     );
     attempts--;
   }
-
-  // alert("Try again " + attempts + "more attempts");
-  // attempts--;
-  // console.log(attempts + "more attempts");
 }
 if (question5 == 2) {
   userPoints++;
