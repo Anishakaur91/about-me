@@ -18,7 +18,7 @@ if (question == true) {
 
 //question one
 let favouriteplace = prompt(
-  "Which is my favourite plave to visit?"
+  "Which is my favourite place to visit?"
 ).toLowerCase();
 if (
   favouriteplace == "london" ||
@@ -26,10 +26,10 @@ if (
   favouriteplace == "japan"
 ) {
   alert("WELL DONE, you got one right..so far! Keep going!");
-} else if (favouriteplace == "china" || favouriteplace == "pakistan") {
-  alert("I guess somebody does'nt know me much!");
+  userPoints++;
+  console.log(userPoints);
 } else {
-  alert("better luck next time");
+  alert("I guess somebody does'nt know me much!");
 }
 
 // question two
@@ -48,6 +48,7 @@ for (let i = 0; i < foodsILike.length; i++) {
         " Your doing well, let's see if you can keep it going."
     );
     userPoints++;
+    console.log(userPoints);
   }
 }
 
@@ -59,6 +60,7 @@ let shopping = confirm("Do I like to do online shopping ?");
 if (shopping == true) {
   alert("Your smashing this! Only 2 questions to go.");
   userPoints++;
+  console.log(userPoints);
 } else {
   alert("Come on, pay attention. You really aren't having much luck.");
 }
@@ -66,12 +68,10 @@ if (shopping == true) {
 // question four
 let question4 = confirm("Is my favourite cuisine chinese?");
 if (question4 == true) {
-  console.log("correct!");
   alert("Your smashing this! Only 1 more question to go.");
   userPoints++;
-} else question4 == false;
-{
-  console.log("incorrect!");
+  console.log(userPoints);
+} else {
   alert("better luck next time");
 }
 
@@ -94,6 +94,10 @@ while (question5 != 2 && attempts > 0) {
   }
 }
 if (question5 == 2) {
+  alert("Nice, you guessed my favourite number.");
   userPoints++;
-  alert("well done");
+  console.log(userPoints);
+}
+{
+  alert(user + " Well done, you scored " + userPoints + "/5");
 }
