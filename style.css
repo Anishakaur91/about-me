@@ -2,13 +2,37 @@ h1 {
   font-family: sans-serif;
   color: blueviolet;
 }
+html {
+  background-color: salmon;
+}
+h2 {
+  font-size: medium;
+  color: orangered;
+}
+ul {
+  color: gold;
+}
+
 p {
-  color: rgb(255, 127, 138);
+  color: rgb(129, 127, 255);
 }
 p.experience {
   background-color: antiquewhite;
   font-family: helvetica;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 #education {
-  color: aquamarine;
+  color: black;
+}
+footer {
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 50px;
+  margin-right: 50px;
+}
+ol {
+  color: brown;
 }
