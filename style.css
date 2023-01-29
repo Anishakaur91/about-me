@@ -1,37 +1,47 @@
 h1 {
   font-family: sans-serif;
   color: blueviolet;
+
+  background-color: lightgrey;
+  width: 400px;
+  border: 15px solid blue;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
 }
 html {
-  background-color: salmon;
+  background-color: papayawhip;
 }
 h2 {
-  font-size: medium;
+  font-size: larger;
   color: orangered;
+}
+p {
+  font-size: larger;
 }
 ul {
   color: gold;
+  background: #fff;
 }
 
-p {
-  color: rgb(129, 127, 255);
-}
 p.experience {
-  background-color: antiquewhite;
+  background-color: turquoise;
   font-family: helvetica;
-  margin-left: 10px;
-  margin-top: 10px;
+
+  position: relative;
 }
 #education {
-  color: black;
+  color: red;
+}
+#goals {
+  color: blueviolet;
 }
 footer {
-  padding-left: 20px;
-  margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border: 50px;
-  margin-right: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
 }
 ol {
   color: brown;
